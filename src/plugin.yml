@@ -1,0 +1,14 @@
+﻿name: PSFBadges
+main: de.psfanserver.badge.Main
+version: 0.1
+authors: [ZiegelStein, Zahlex, TheBuli22]
+website: http://pietsmiet-fanserver.de
+
+commands:
+  badges:
+    aliases: [abzeichen, stats]
+    description: Zeit dir Badges an.
+    usage: /<command> <Name>
+  badge:
+    permission: psfbades.admin
+    permission-message: '§9Benutze §a§o/badges'
