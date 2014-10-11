@@ -22,7 +22,7 @@ public class mySQLconnector {
 		
 	}
 	
-	public String[] badgeListReturn (Player currentPlayer) {
+	public String[] badgeListReturn (BadgePlayer currentPlayer) {
 		return null;
 	}
 	
@@ -30,11 +30,11 @@ public class mySQLconnector {
 		return null;
 	}
 	
-	public String badgeCount (Player currentPlayer) {
+	public String badgeCount (BadgePlayer currentPlayer) {
 		return null;
 	}
 	
-	public Player badgeListPlayer (Badge urrentBadge) {
+	public BadgePlayer badgeListPlayer (Badge urrentBadge) {
 		return null;
 	}
 	
@@ -42,7 +42,7 @@ public class mySQLconnector {
 		return null;
 	}
 	
-	public Player badgeReturnLatestPlayer () {
+	public BadgePlayer badgeReturnLatestPlayer () {
 		return null;
 	}
 	

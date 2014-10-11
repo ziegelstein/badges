@@ -1,13 +1,13 @@
 package de.psfanserver.badge;
 
-public class Player {
+public class BadgePlayer {
 
-	int uuid;
+	String uuid;
     String Name;
-	public int getUuid() {
+	public String getUuid() {
 		return uuid;
 	}
-	public void setUuid(int uuid) {
+	public void setUuid(String uuid) {
 		this.uuid = uuid;
 	}
 	public String getName() {

@@ -9,12 +9,12 @@ public class InteractEvent implements Listener{
 	
 	@EventHandler
 	public void onInteract(PlayerInteractEntityEvent e){
-		if(!(e.getRightClicked() instanceof Player)){
+		if(!(e.getRightClicked() instanceof BadgePlayer)){
 			return;
 		}
 		if(Main.plugin.getConfig().getBoolean("RightClickEnabled")){
-			Player p = e.getPlayer();
-			Player o = (Player) e.getRightClicked();
+			BadgePlayer p = e.getPlayer();
+			BadgePlayer o = (BadgePlayer) e.getRightClicked();
 			
 			//Zeige Badges an
 		}

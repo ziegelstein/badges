@@ -10,12 +10,12 @@ public class badgesCommand implements CommandExecutor {
 
 	@Override
 	public boolean onCommand(CommandSender cs, Command cmd, String label, String[] args) {
-		if(cs instanceof Player == false){
+		if(cs instanceof BadgePlayer == false){
 			cs.sendMessage("Du bist kein Spieler");
 			return true;
 		}
 		
-		Player p = (Player)cs;
+		BadgePlayer p = (BadgePlayer)cs;
 		
 		if(args.length == 0){
 			//Zeige eigene Badges
