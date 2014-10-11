@@ -13,8 +13,8 @@ public class InteractEvent implements Listener{
 			return;
 		}
 		if(Main.plugin.getConfig().getBoolean("RightClickEnabled")){
-			BadgePlayer p = e.getPlayer();
-			BadgePlayer o = (BadgePlayer) e.getRightClicked();
+			Player p = e.getPlayer();
+			Player o = (Player) e.getRightClicked();
 			
 			//Zeige Badges an
 		}

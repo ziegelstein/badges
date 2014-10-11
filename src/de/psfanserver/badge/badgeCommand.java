@@ -19,7 +19,7 @@ public class badgeCommand implements CommandExecutor {
 				//badge hinzufügen
 			}
 			else{
-				cs.sendMessage("/badge add <badgeID> <SpielerName/UUID>");
+				cs.sendMessage("/badge add <badgeID> <PlayerName/UUID>");
 			}
 		}
 		
@@ -31,7 +31,7 @@ public class badgeCommand implements CommandExecutor {
 				//badge entfernen
 			}
 			else{
-				cs.sendMessage("/badge remove <badgeID> <SpielerName/UUID>");
+				cs.sendMessage("/badge remove <badgeID> <PlayerName/UUID>");
 			}
 		}
 		

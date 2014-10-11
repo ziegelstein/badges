@@ -15,7 +15,7 @@ public class badgesCommand implements CommandExecutor {
 			return true;
 		}
 		
-		BadgePlayer p = (BadgePlayer)cs;
+		Player p = (Player)cs;
 		
 		if(args.length == 0){
 			//Zeige eigene Badges
