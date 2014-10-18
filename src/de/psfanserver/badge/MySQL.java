@@ -69,24 +69,6 @@ public class MySQL {
 	/**
 	 * This function create new Tables if they dont already exist
 	 * =============================
-	 * con.createStatement().executeUpdate("CREATE TABLE IF NOT EXISTS `player` " +
-			"(uuid INT NOT NULL PRIMARY KEY, " +
-			"pname VARCHAR(20)" +
-			")");
-    		con.createStatement().executeUpdate("CREATE TABLE IF NOT EXISTS `transaction` " +
-			"(transid INT NOT NULL AUTO_INCREMENT PRIMARY KEY, " +
-			"puuid INT REFERENCES player (uuid),"+ 
-			"badgeid INT REFERENCES badge (bid)," +
-			"transtime TIMESTAMP" +
-			")");
-    		con.createStatement().executeUpdate("CREATE TABLE IF NOT EXISTS `badge` " +
-    				"(bid INT NOT NULL PRIMARY KEY, " +
-    				"blore TEXT (255)" +
-    				"bblockid INT"+
-    				"bname VARCHAR (255)"+
-    				"benchant VARCHAR (255)"+
-    				")");
-    				===============================
 	 * @param createTables contain information about the tables
 	 * @return
 	 */
