@@ -2,10 +2,12 @@ package de.psfanserver.badge;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 
 /**
  * A nacked class to connect to an mySQL-Database
+ * reusable 
  * @author Felix
  *
  */
@@ -99,6 +101,24 @@ public class MySQL {
     		con.createStatement().executeUpdate(sql);
     	}catch (SQLException e) {
     		System.err.println("Konnte das Update ("+sql+") nicht ausführen!");
+    	}
+    }
+    
+    public ResultSet getQuerry(String sql) {
+    	try {
+    		return con.createStatement().executeQuery(sql);
+    	} catch (SQLException e) {
+    		System.err.println("Konnte das Query ("+sql+") nicht ausführen!");
+    		return null;
+    	}
+    }
+    
+    public boolean doCheck (String sql) {
+    	try {
+    		return con.createStatement().execute(sql);
+    	} catch (SQLException e) {
+    		System.err.println("Konnte das Check ("+sql+") nicht ausführen!");
+    		return false;
     	}
     }
 

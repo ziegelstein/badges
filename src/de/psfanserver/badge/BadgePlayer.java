@@ -3,7 +3,13 @@ package de.psfanserver.badge;
 public class BadgePlayer {
 
 	String uuid;
-    String Name;
+    String name;
+    
+    BadgePlayer (String localuuid, String localname) {
+    	this.uuid = localuuid;
+    	this.name = localname;
+    }
+    
 	public String getUuid() {
 		return uuid;
 	}
@@ -11,12 +17,10 @@ public class BadgePlayer {
 		this.uuid = uuid;
 	}
 	public String getName() {
-		return Name;
+		return name;
 	}
 	public void setName(String name) {
-		Name = name;
+		this.name = name;
 	}
-    
-    
 	
 }
